@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Biografía | Briana Casiva 💙</title>
+
+    <style>
+
+        /* 🌊 ESTILO GENERAL */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(
+                135deg,
+                #ffffff,
+                #dcecff,
+                #9fc5e8,
+                #ffffff
+            );
+
+            background-size: 400% 400%;
+            animation: fondo 12s ease infinite;
+
+            font-family: "Trebuchet MS", Arial, sans-serif;
+            color: #ffffff;
+            line-height: 1.7;
+            padding: 25px;
+        }
+
+        @keyframes fondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* 🔵 CONTENEDOR */
+
+        .contenedor {
+            max-width: 950px;
+            margin: auto;
+
+            background: rgba(10, 35, 70, 0.92);
+
+            border: 5px solid #ffffff;
+            border-radius: 35px;
+
+            padding: 35px;
+
+            box-shadow:
+                0 0 25px rgba(0, 50, 110, 0.35),
+                0 15px 50px rgba(0, 25, 60, 0.45);
+        }
+
+        /* 🌊 ENCABEZADO */
+
+        header {
+            text-align: center;
+
+            padding: 35px 25px;
+            margin-bottom: 30px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #071d3b,
+                    #0b3266,
+                    #155aa0
+                );
+
+            border: 4px solid #ffffff;
+            border-radius: 30px;
+
+            box-shadow:
+                0 10px 30px rgba(0, 20, 50, 0.5);
+
+            animation: aparecer 1s ease;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(-25px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #ffffff;
+
+            font-size: 46px;
+
+            margin-bottom: 10px;
+
+            text-shadow:
+                3px 3px 0 #06182f,
+                0 0 15px #9ed5ff;
+
+            animation: brillo 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes brillo {
+            from {
+                text-shadow:
+                    3px 3px 0 #06182f,
+                    0 0 8px #ffffff;
+            }
+
+            to {
+                text-shadow:
+                    3px 3px 0 #06182f,
+                    0 0 25px #72c4ff;
+            }
+        }
+
+        .subtitulo {
+            font-size: 19px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* ✨ DECORACIONES */
+
+        .decoracion {
+            color: #ffffff;
+            font-size: 27px;
+            letter-spacing: 10px;
+            margin: 10px 0;
+        }
+
+        /* 📘 SECCIONES */
+
+        section {
+            padding: 28px;
+            margin: 28px 0;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #123d70,
+                    #0a2850
+                );
+
+            border: 3px solid #ffffff;
+            border-radius: 28px;
+
+            box-shadow:
+                0 10px 25px rgba(0, 25, 60, 0.4);
+
+            transition: all 0.4s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 15px 35px rgba(0, 20, 50, 0.55);
+        }
+
+        /* 💙 TÍTULOS */
+
+        h2 {
+            color: #ffffff;
+
+            font-size: 31px;
+
+            margin-bottom: 18px;
+
+            border-bottom: 3px solid #8fd3ff;
+
+            padding-bottom: 10px;
+
+            text-shadow:
+                2px 2px 4px #06182f;
+        }
+
+        p {
+            font-size: 17px;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        /* 👩 PRESENTACIÓN */
+
+        .presentacion {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .foto {
+            width: 210px;
+            height: 210px;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            border: 7px solid #ffffff;
+
+            box-shadow:
+                0 0 0 5px #4fa9e8,
+                0 10px 30px rgba(0, 20, 50, 0.6);
+
+            transition: all 0.4s ease;
+        }
+
+        .foto:hover {
+            transform: scale(1.08) rotate(3deg);
+
+            box-shadow:
+                0 0 0 7px #8fd3ff,
+                0 15px 35px rgba(0, 20, 50, 0.7);
+        }
+
+        .texto {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        /* 🌟 LISTAS */
+
+        ul {
+            list-style: none;
+            padding-left: 5px;
+        }
+
+        li {
+            margin: 12px 0;
+
+            font-size: 18px;
+
+            padding: 10px 15px;
+
+            background: rgba(255, 255, 255, 0.10);
+
+            border-left: 4px solid #8fd3ff;
+
+            border-radius: 12px;
+
+            transition: all 0.3s ease;
+        }
+
+        li:hover {
+            background: rgba(143, 211, 255, 0.18);
+
+            transform: translateX(8px);
+        }
+
+        .gustos li::before {
+            content: "♡ ";
+            color: #8fd3ff;
+            font-size: 23px;
+        }
+
+        .futuro li::before {
+            content: "✦ ";
+            color: #8fd3ff;
+            font-size: 20px;
+        }
+
+        .cinco li::before {
+            content: "🌊 ";
+        }
+
+        /* 🎵 MÚSICA */
+
+        .musica {
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #061a38,
+                    #0b3970,
+                    #061a38
+                );
+
+            background-size: 300% 300%;
+
+            animation: musicaFondo 8s ease infinite;
+
+            border: 5px solid #8fd3ff;
+
+            box-shadow:
+                0 0 30px rgba(100, 200, 255, 0.3),
+                0 15px 35px rgba(0, 15, 40, 0.6);
+        }
+
+        @keyframes musicaFondo {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .musica h2 {
+            font-size: 36px;
+            color: #ffffff;
+
+            border-bottom: 3px solid #8fd3ff;
+
+            text-shadow:
+                2px 2px 5px #000b1c;
+        }
+
+        .musica::before {
+            content: "♡ ✦ 🌊 ♡ 🎵 ♡ 🎧 ♡ 🌊 ✦ ♡";
+
+            display: block;
+
+            color: #8fd3ff;
+
+            font-size: 26px;
+
+            letter-spacing: 5px;
+
+            margin-bottom: 15px;
+        }
+
+        .intro-musica {
+            color: #ffffff;
+
+            font-size: 19px;
+
+            font-weight: bold;
+
+            text-shadow:
+                1px 1px 3px #000b1c;
+        }
+
+        /* 🎧 TARJETAS DE CANCIONES */
+
+        .lista-musica {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 25px;
+
+            margin-top: 25px;
+        }
+
+        .cancion {
+            position: relative;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #174f89,
+                    #092c59
+                );
+
+            border: 3px solid #ffffff;
+
+            border-radius: 28px;
+
+            padding: 28px 18px;
+
+            box-shadow:
+                0 10px 25px rgba(0, 10, 30, 0.6);
+
+            transition:
+                transform 0.35s ease,
+                box-shadow 0.35s ease,
+                background 0.35s ease;
+
+            overflow: hidden;
+        }
+
+        .cancion:hover {
+            transform:
+                translateY(-10px)
+                scale(1.04);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #2879bd,
+                    #0b4078
+                );
+
+            box-shadow:
+                0 18px 35px rgba(0, 10, 30, 0.7);
+
+            border-color: #8fd3ff;
+        }
+
+        .cancion::before {
+            content: "♡";
+
+            position: absolute;
+
+            top: 5px;
+            left: 12px;
+
+            color: #8fd3ff;
+
+            font-size: 28px;
+        }
+
+        .cancion::after {
+            content: "✦";
+
+            position: absolute;
+
+            bottom: 5px;
+            right: 12px;
+
+            color: #8fd3ff;
+
+            font-size: 25px;
+        }
+
+        .numero-cancion {
+            display: inline-block;
+
+            background: #ffffff;
+
+            color: #092c59;
+
+            width: 48px;
+            height: 48px;
+
+            line-height: 48px;
+
+            border-radius: 50%;
+
+            font-weight: bold;
+            font-size: 20px;
+
+            margin-bottom: 10px;
+
+            box-shadow:
+                0 5px 12px rgba(0, 10, 30, 0.5);
+        }
+
+        .cancion h3 {
+            color: #ffffff;
+
+            font-size: 22px;
+
+            margin: 8px 0 12px;
+
+            text-shadow:
+                2px 2px 4px #000b1c;
+        }
+
+        .cancion p {
+            color: #ffffff;
+
+            font-size: 15px;
+
+            margin-bottom: 15px;
+        }
+
+        /* ▶ BOTÓN YOUTUBE */
+
+        .boton-youtube {
+            display: inline-block;
+
+            background: #ffffff;
+
+            color: #092c59;
+
+            padding: 11px 20px;
+
+            border-radius: 25px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            font-size: 14px;
+
+            border: 3px solid #8fd3ff;
+
+            box-shadow:
+                0 5px 12px rgba(0, 10, 30, 0.4);
+
+            transition: all 0.3s ease;
+        }
+
+        .boton-youtube:hover {
+            background: #8fd3ff;
+
+            color: #061a38;
+
+            transform: scale(1.1);
+        }
+
+        .decoracion-musica {
+            color: #8fd3ff;
+
+            font-size: 28px;
+
+            letter-spacing: 8px;
+
+            margin-top: 25px;
+        }
+
+        /* 📱 INSTAGRAM */
+
+        .instagram {
+            text-align: center;
+
+            margin-top: 30px;
+
+            padding: 28px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #123d70,
+                    #061a38
+                );
+
+            border-radius: 28px;
+
+            border: 4px solid #ffffff;
+
+            box-shadow:
+                0 10px 25px rgba(0, 20, 50, 0.5);
+        }
+
+        .instagram h2 {
+            border: none;
+        }
+
+        .instagram a {
+            display: inline-block;
+
+            color: #061a38;
+
+            background: #ffffff;
+
+            font-weight: bold;
+
+            text-decoration: none;
+
+            font-size: 21px;
+
+            padding: 9px 20px;
+
+            border-radius: 20px;
+
+            transition: all 0.3s ease;
+        }
+
+        .instagram a:hover {
+            background: #8fd3ff;
+
+            color: #061a38;
+
+            transform: scale(1.1);
+        }
+
+        /* 🔮 BOTÓN FUTURO */
+
+        .boton-futuro {
+            display: block;
+
+            margin: 30px auto 10px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ffffff,
+                    #8fd3ff
+                );
+
+            color: #061a38;
+
+            border: 4px solid #ffffff;
+
+            border-radius: 30px;
+
+            padding: 14px 28px;
+
+            font-size: 19px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 8px 20px rgba(0, 20, 50, 0.5);
+
+            transition: all 0.3s ease;
+        }
+
+        .boton-futuro:hover {
+            transform:
+                scale(1.1)
+                rotate(-2deg);
+
+            background: #ffffff;
+
+            box-shadow:
+                0 12px 30px rgba(0, 20, 50, 0.65);
+        }
+
+        #mensaje {
+            text-align: center;
+
+            color: #ffffff;
+
+            font-size: 20px;
+
+            font-weight: bold;
+
+            margin-top: 15px;
+
+            text-shadow:
+                2px 2px 4px #061a38;
+        }
+
+        /* 💙 FOOTER */
+
+        footer {
+            text-align: center;
+
+            margin-top: 30px;
+
+            color: #ffffff;
+
+            font-size: 15px;
+        }
+
+        /* 📱 CELULARES */
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 12px;
+            }
+
+            .contenedor {
+                padding: 18px;
+                border-radius: 25px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            .musica h2 {
+                font-size: 28px;
+            }
+
+            .presentacion {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .foto {
+                width: 175px;
+                height: 175px;
+            }
+
+            .lista-musica {
+                grid-template-columns: 1fr;
+            }
+
+            .cancion {
+                padding: 24px 15px;
+            }
+
+            .decoracion {
+                font-size: 20px;
+                letter-spacing: 5px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <div class="contenedor">
+
+
+        <!-- 🌊 ENCABEZADO -->
+
+        <header>
+
+            <div class="decoracion">
+                ♡ ✦ ♡ ✦ ♡ ✦ ♡
+            </div>
+
+            <h1>
+                ¡Hola! Soy Briana Casiva 💙
+            </h1>
+
+            <p class="subtitulo">
+                Bienvenidos a mi pequeña página personal ♡
+            </p>
+
+            <div class="decoracion">
+                ♡ ✦ ♡ ✦ ♡ ✦ ♡
+            </div>
+
+        </header>
+
+
+        <!-- 🌸 SOBRE MÍ -->
+
+        <section>
+
+            <h2>
+                🌊 Sobre mí
+            </h2>
+
+            <div class="presentacion">
+
+                <img
+                    class="foto"
+                    src="https://i.pinimg.com/736x/2d/ca/19/2dca192acdfc7b46b8aa46fc3ca10c30.jpg"
+                    alt="Foto de Briana"
+                >
+
+                <div class="texto">
+
+                    <p>
+                        ¡Hola! Soy Briana, una chica alegre, chistosa
+                        y a la que le encanta hacer chistes y hacer
+                        reír a las personas. 💙
+                    </p>
+
+                    <p>
+                        Tengo 14 años y vivo en Córdoba.
+                        Mi familia está compuesta por mis padres,
+                        mi hermana y yo.
+                    </p>
+
+                    <p>
+                        Me gustan los deportes, aunque en este momento
+                        todavía no encontré uno que realmente sea
+                        de mi interés.
+                    </p>
+
+                    <p>
+                        Esta es mi primera página web y quise hacerla
+                        sobre mí, mis gustos y mis sueños para el futuro. ✨
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 🎀 MIS GUSTOS -->
+
+        <section>
+
+            <h2>
+                💙 Mis gustos
+            </h2>
+
+            <ul class="gustos">
+
+                <li>Deportes</li>
+                <li>Actuar</li>
+                <li>Escuchar música</li>
+                <li>Cocinar</li>
+                <li>Hacer reír a las personas</li>
+                <li>Las mascotas 🐾</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- 🌊 MI FUTURO -->
+
+        <section>
+
+            <h2>
+                🌊 Mi futuro
+            </h2>
+
+            <ul class="futuro">
+
+                <li>Ir a la facultad y recibirme.</li>
+                <li>Ser médica de cirugía.</li>
+                <li>Casarme y formar una familia.</li>
+                <li>Tener dos hijos varones y una mujer.</li>
+                <li>Viajar por el mundo. ✈️</li>
+                <li>Darles la mejor vida posible a mis hijos.</li>
+                <li>Vivir en un lugar tranquilo, feliz y lleno de amor.</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ✨ EN 5 AÑOS -->
+
+        <section>
+
+            <h2>
+                ✨ ¿Cómo me veo en 5 años?
+            </h2>
+
+            <ul class="cinco">
+
+                <li>Me veo empezando mi carrera.</li>
+                <li>Teniendo un trabajo que me permita estudiar.</li>
+                <li>Teniendo una casita propia.</li>
+                <li>Pudiendo ir de viaje y conocer nuevos lugares.</li>
+                <li>Luchando por mis sueños y construyendo mi futuro. 💙</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- 🎵 MI MÚSICA FAVORITA -->
+
+        <section class="musica">
+
+            <h2>
+                🎵 Mi música favorita 🎵
+            </h2>
+
+            <p class="intro-musica">
+                ♡ Algunas canciones que me encanta escuchar ♡
+            </p>
+
+            <div class="lista-musica">
+
+
+                <!-- 🎧 CANCIÓN 1 -->
+
+                <div class="cancion">
+
+                    <div class="numero-cancion">
+                        1
+                    </div>
+
+                    <h3>
+                        🌊 VOU 787<br>
+                        Bad Bunny #1
+                    </h3>
+
+                    <p>
+                        Una canción que me encanta escuchar. ♡
+                    </p>
+
+                    <a
+                        class="boton-youtube"
+                        href="https://www.youtube.com/watch?v=ig-WD2cvXWw&list=RDig-WD2cvXWw&start_radio=1"
+                        target="_blank"
+                    >
+                        ▶ Escuchar en YouTube
+                    </a>
+
+                </div>
+
+
+                <!-- 🎧 CANCIÓN 2 -->
+
+                <div class="cancion">
+
+                    <div class="numero-cancion">
+                        2
+                    </div>
+
+                    <h3>
+                        💙 MAMICHULA<br>
+                        Trueno #2
+                    </h3>
+
+                    <p>
+                        Una de mis canciones favoritas. ✨
+                    </p>
+
+                    <a
+                        class="boton-youtube"
+                        href="https://www.youtube.com/watch?v=ig-WD2cvXWw&list=RDig-WD2cvXWw&start_radio=1"
+                        target="_blank"
+                    >
+                        ▶ Escuchar en YouTube
+                    </a>
+
+                </div>
+
+
+                <!-- 🎧 CANCIÓN 3 -->
+
+                <div class="cancion">
+
+                    <div class="numero-cancion">
+                        3
+                    </div>
+
+                    <h3>
+                        🎧 LOCO (TU FORMA DE SER)<br>
+                        Los Auténticos Decadentes #3
+                    </h3>
+
+                    <p>
+                        Una canción que siempre me gusta escuchar. 🌊
+                    </p>
+
+                    <a
+                        class="boton-youtube"
+                        href="https://www.youtube.com/watch?v=fgXDHQm5eq4&list=RDfgXDHQm5eq4&start_radio=1"
+                        target="_blank"
+                    >
+                        ▶ Escuchar en YouTube
+                    </a>
+
+                </div>
+
+
+                <!-- 🎧 CANCIÓN 4 -->
+
+                <div class="cancion">
+
+                    <div class="numero-cancion">
+                        4
+                    </div>
+
+                    <h3>
+                        🌊 BROKETE<br>
+                        Bad Bunny #4
+                    </h3>
+
+                    <p>
+                        Otra canción que forma parte de mis favoritas. ♡
+                    </p>
+
+                    <a
+                        class="boton-youtube"
+                        href="https://www.youtube.com/watch?v=O-WsQlXaa0E&list=RDO-WsQlXaa0E&start_radio=1"
+                        target="_blank"
+                    >
+                        ▶ Escuchar en YouTube
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="decoracion-musica">
+                ♡ 🌊 ♡ ✦ ♡ 🎵 ♡ 🎧 ♡ ✦ ♡ 🌊 ♡
+            </div>
+
+        </section>
+
+
+        <!-- 🔮 VER MI FUTURO -->
+
+        <button
+            class="boton-futuro"
+            onclick="mostrarFuturo()"
+        >
+            🔮 Ver mi futuro
+        </button>
+
+        <p id="mensaje"></p>
+
+
+        <!-- 📱 INSTAGRAM -->
+
+        <div class="instagram">
+
+            <h2>
+                📱 Mi Instagram
+            </h2>
+
+            <p>
+                Podés encontrarme en:
+            </p>
+
+            <a
+                href="https://instagram.com/briana__331"
+                target="_blank"
+            >
+                @briana__331
+            </a>
+
+        </div>
+
+
+        <!-- 💙 FINAL -->
+
+        <footer>
+
+            <div class="decoracion">
+                ♡ 💙 ♡ ✦ ♡ 🌊 ♡ ✦ ♡ 💙 ♡
+            </div>
+
+            <p>
+                Hecho con mucho cariño ♡
+            </p>
+
+            <p>
+                Briana Casiva 💙
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <!-- 🔮 JAVASCRIPT -->
+
+    <script>
+
+        function mostrarFuturo() {
+
+            document.getElementById("mensaje").innerHTML =
+                "🚀 ¡Seré una gran cirujana en el futuro! 💙✨";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
